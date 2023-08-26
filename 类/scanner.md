@@ -1,0 +1,16 @@
+- 一
+	- 通过scanner类来获取用户的输入，与c中的scanf相似
+	- 用法
+		- import java.util.Scanner
+		- Scanner s =new Scanner(System.in)//创建了一个Scanner对象s，用于接收数据
+		- 类型 n = s.方法名
+		- Scanner.close//关闭io流
+		- 常见用法
+			- 1.nextInt/Double/……
+				- 只读取数值，读取完后将光标放在本行
+				- 可以一次性输入多个数字用多个读取![[Pasted image 20230816180611.png]]![[Pasted image 20230816180629.png]]
+			- 2.next和nextLine
+				- 两者都是用来接收用户输入的字符串
+				- 区别
+					- next对于输入有效字符前的空白会自动去掉，有效字符后的空格也会被当作结束符，因此无法接收有空格的字符串
+					- 而nextLine只有回车才作为结束符
